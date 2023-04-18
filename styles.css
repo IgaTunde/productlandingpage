@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #fff;
+}
+
+img {
+  width: 200px;
+  height: 150px;
+  object-fit:fill;
+  
+}
+
+.head {
+  position: relative;
+  text-transform:capitalize;
+  margin-bottom: 50px;
+  margin-top: 50px;
+  animation-name: head;
+  animation-fill-mode: forwards;
+  animation-duration: 3s;
+}
+
+@keyframes head {
+  0% {top: -50px}
+  100% {top: 10px}
+}
+
+.product, h1 {
+  max-width: 800px;
+  margin: auto;
+}
+
+.product .container {
+  display: flex;
+  justify-content: center;
+  flex: 3;
+  margin-bottom: 50px;
+  
+}
+
+.product .container .details {
+  line-height: 40px;
+  text-align:start;
+  box-sizing: border-box;
+  box-shadow: 10px 20px 30px;
+  margin-right: 60px;
+  
+}
+.product .container .details .price {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product .text {
+  padding: 10px;
+}
+
+h2 {
+  text-transform: capitalize;
+  font-size : 16px;
+  font-weight : bold;
+}
+p {
+  font-size : 14px;
+  transition: .5s;
+  transition-duration: 1s;
+}
+
+p:hover {
+  transform: translate(0 ,10px);
+}
+
+.far, .fa {
+  color: #486;
+  padding-right : 10px;
+  font-size: 18px;
+}
+
+button {
+  background: #486;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 12px;
+  height: 20px;
+  margin-top: 10px;
+  padding: 5px 10px;
+  
+}
+
+button:hover {
+  background: green;
+}
+
+
+footer {
+  text-align: center;
+  margin-bottom: 10px;
+  
+}
+
+footer .foot-p {
+  text-transform: capitalize;
+  font-size: 12px;
+}
+
+@media screen and (max-width:720px) {
+  body {
+    background: bisque;
+  }
+
+  .head {
+    text-align: center;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: center;
+    
+  }
+
+  .details {
+    margin-bottom: 30px;
+    width:200px;
+  }
+
+  img {
+    width: 100%;
+    height: 50%px;
+    object-fit: fill;
+  }
+
+  .foot-p {
+    margin-top: -30px;
+    padding: 0 40px;
+    font-size: 8px;
+  }
+
+  p {
+    font-size : 14px;
+    transition: .5s;
+    transition-duration: 1s;
+  }
+  
+  p:hover {
+    transform: translate(0 ,10px);
+  }
+}
